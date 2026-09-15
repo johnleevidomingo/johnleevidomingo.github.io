@@ -2,30 +2,62 @@
   "basics": {
     "name": "John Leevi Domingo",
     "label": "Student",
-    "picture": "https://github.com/kambergjohnson.png",
+    "picture": "https://github.com/johnleevidomingo.png",
     "phone": "808-498-6372",
     "email": "domingojohnleevi@gmail.com",
     "website": "https://johnleevidomingo.github.io",
     "summary": "I am studying for a B.A. in Computer Science in the Department of Information and Computer Sciences at the University of Hawaii. I expect to graduate in Fall, 2027.",
     "profiles": [
-      { "network": "github", "username": "johnleevidomingo", "url": "https://github.com/johnleevidomingo" },
-      { "network": "linkedin", "username": "mollymaluhia", "url": "https://www.linkedin.com/in/domingojohnleevi/" },
+      {
+        "network": "github",
+        "username": "johnleevidomingo",
+        "url": "https://github.com/johnleevidomingo"
+      },
+      {
+        "network": "linkedin",
+        "username": "mollymaluhia",
+        "url": "https://www.linkedin.com/in/domingojohnleevi/"
+      }
     ]
   },
   "interests": [
-    { "name": "Game Development" },
-    { "name": "Cyper Security" },
-    { "name": "Pool" },
-    { "name": "Hiking" },
+    {
+      "name": "Game Development"
+    },
+    {
+      "name": "Cybersecurity"
+    },
+    {
+      "name": "Pool"
+    },
+    {
+      "name": "Hiking"
+    }
   ],
   "skills": [
     {
       "name": "Languages and Frameworks",
-      "keywords": [ "C", "C++", "Java", "Javascript", "Python", "TypeScript" ]
+      "keywords": [
+        "C",
+        "C++",
+        "Java",
+        "JavaScript",
+        "Python",
+        "TypeScript"
+      ]
     },
     {
       "name": "Toolsets/OS",
-      "keywords": [ "Windows", "VS Code", "Git/GitHub", "Unity", "GoDot 4", "Autodesk Maya", "AutoCAD Civil 3D", "RiSCAN Pro" ]
+      "keywords": [
+        "Windows",
+        "VS Code",
+        "Git/GitHub",
+        "Unity",
+        "Godot 4",
+        "Autodesk Maya",
+        "AutoCAD Civil 3D",
+        "RiSCAN Pro"
+      ]
     }
   ],
   "education": [
@@ -34,7 +66,7 @@
       "area": "Information Computer Science (expected Spring, 2027)",
       "studyType": "B.A.",
       "startDate": "2023-09-01",
-      "endDate": "Present",
+      "endDate": "Present"
     }
   ],
   "work": [
@@ -46,9 +78,9 @@
       "endDate": "Present",
       "summary": "Process terrestrial LiDAR point cloud data and draft it into survey-grade CAD deliverables.",
       "highlights": [
-      "Register and process terrestrial LiDAR scans in RiSCAN Pro, resolving tiepoint registration and alignment errors",
-      "Draft topographic, utility, and civil survey features in AutoCAD Civil 3D to company layer standards",
-      "Review feature-coded topographic survey data and produce DXF linework, LandXML, and DTM surface deliverables",
+        "Register and process terrestrial LiDAR scans in RiSCAN Pro, resolving tiepoint registration and alignment errors",
+        "Draft topographic, utility, and civil survey features in AutoCAD Civil 3D to company layer standards",
+        "Review feature-coded topographic survey data and produce DXF linework, LandXML, and DTM surface deliverables"
       ]
     },
     {
@@ -64,11 +96,11 @@
         "Handled sensitive passenger and flight information with discretion and accuracy",
         "Communicated professionally with high-profile clients under tight timelines"
       ]
-    }
+    },
     {
-      "company": "United Sates Marine Corps",
+      "company": "United States Marine Corps",
       "position": "Administrative Assistant",
-      "website": "https://www.marines.com",
+      "website": "https://www.marines.mil",
       "startDate": "2013-10-20",
       "endDate": "2017-11-20",
       "summary": "Served four years as a Marine Corps administrative specialist, managing personnel records, awards, promotions, training certifications, and travel for units stationed in the U.S., Japan, and Spain.",
@@ -81,19 +113,6 @@
       ]
     }
   ],
-  "volunteer": [
-    {
-      "organization": "Center for Renewable Energy and Island Sustainability",
-      "website": "http://manoa.hawaii.edu/reis",
-      "position": "Software Developer",
-      "startDate": "2016-01-01",
-      "endDate": "Present",
-      "summary": "Lead developer for weather sensing project",
-      "highlights": [
-        "Design firmware for distributed weather sensor network",
-        "Maintain custom data collection and storage infrastructure"
-      ]
-    },
   "references": [
     {
       "name": "Available upon request"
