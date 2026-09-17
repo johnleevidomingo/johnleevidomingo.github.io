@@ -3,7 +3,7 @@ layout: essay
 type: essay
 title: "Reflect on Typescript"
 # All dates must be YYYY-MM-DD format!
-date: 2016-09-16
+date: 2026-09-16
 published: true
 labels:
   - Information Computer Science
