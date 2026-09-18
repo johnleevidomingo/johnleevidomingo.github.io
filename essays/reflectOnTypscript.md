@@ -12,7 +12,7 @@ labels:
   - Athletic Software Engineering
 ---
 
-<img width="200px" class="rounded float-start pe-4" src="../img/difficulty/degree_difficulty.jpg">
+<img width="200px" class="rounded float-start pe-4" src="../img/degree_difficulty.jpg">
 
 The reality hit really deep when I took the first WOD in class about 2 weeks ago. I froze up and did not know what to do. After a few WODs, this order started to read naturally, first the name, then what it is. ES6 features like let and const, arrow functions, and template literals also showed up constantly, and they make the code shorter than the Java equivalent.
 
