@@ -1,9 +1,9 @@
 ---
 layout: essay
 type: essay
-title: "Smart Questions, Good Answers"
+title: "Ask Better Questions, Get Better Answers!"
 # All dates must be YYYY-MM-DD format!
-date: 2015-09-08
+date: 2026-09-17
 published: true
 labels:
   - Questions
@@ -11,89 +11,27 @@ labels:
   - StackOverflow
 ---
 
-<img width="300px" class="rounded float-start pe-4" src="../img/smart-questions/rtfm.png">
+**Is there such thing as a stupid question?**
 
-## Is there such thing as a stupid question?
+From my past experience, and after reading Eric S. Raymond's article <a href="http://www.catb.org/esr/faqs/smart-questions.html" "target="_blank">How To Ask Questions The Smart Way</a>, I believe there is such a thing as a stupid question. During my contract in the military, my higher-ups always told their junior Marines to look it up before asking. It meant doing your research and having some knowledge of the answer before you opened your mouth. That advice matters even more on an open source forum on the internet, where everyone can see what you wrote. The more vague your question is, the more vague the answer will be, if you get one at all.
 
-I’ve had instructors address a whole class and say, “There’s no such thing as a stupid question.” I now know that is in fact not true because I’ve challenged the statement and received the appropriate dumb-stricken, annoyed look. There are definitely stupid questions, and along with that, usually unhelpful answers. Though we all might be guilty of being callous and making people victim to our poorly formed questions, there are steps we can take to ask smarter questions that hopefully don’t illicit the dreaded “rtfm” or “stfw” response.
+<img width="500px" class="rounded ms-auto d-block" src="../img/stackOverFlowStupidQuestion.png"alt="Screenshot of the Stack OVerflow question">
+<p class="text-center"><small>The question started off on the wrong foot</small></p>
 
-## What’s a smart question?
+A smart question is one that comes from a real thirst for knowledge about something you have not learned yet, asked after you have done your due diligence to find the answer yourself. This question fails that test at the start. The title says nothing about the actual problem, and the post opens with two paragraphs of apologizing: "this is probably going to be the dumbest question you have seen in a good long time" and "I have been pulling my hair out on this for two hours." With thousands of people scrolling Stack Overflow, most of them will not click on a thread that starts like that. The asker made up for it toward the end by posting code and the exact errors, but by then the hook has already turned people away.
 
-Stack Overflow, a question and answer site for programmers, is a great resource for anyone who may have issues with code or who may simply want to learn new or different methods of doing something. There I found examples of good questions and bad questions, which could probably be improved.
+The results show it. The question was downvoted to -1, it was closed as a duplicate of an older question, and after nearly four years it had collected only 169 views and no answer of its own.
 
-In the following example, we examine the components of a decent question. In this case, the asker is trying to figure out a way to get the date of the previous month in Python.
+**What’s a smart question?**
 
-```
-Q: python date of the previous month
+<img width="500px" class="rounded ms-auto d-block" src="../img/stackOverFlowSmartQuestion.png"alt="Screenshot of the Stack OVerflow question">
+<p class="text-center"><small>A very simple and straight forward question</small></p>
 
-I am trying to get the date of the previous month with python. Here is what i've tried:
+As the screenshot above shows, this question has many upvotes. It is direct, straightforward and simple. You could argue that it sits on the borderline of a stupid question, but the topic is a technical term that anyone could be thrown off by, so it is open to interpretation.
 
-str( time.strftime('%Y') ) + str( int(time.strftime('%m'))-1 )
+**Conclusion**
 
-However, this way is bad for 2 reasons: First it returns 20122 for the February of 2012 (instead of 201202) 
-and secondly it will return 0 instead of 12 on January.
+When we rely on other people's generosity and expertise to answer our questions, the question we ask should be one that leads to efficient and effective help. It should benefit us, the people we ask, and anyone who runs into the same problem later. So if you have a question, make it a smart one. Asking questions will not always get you the best answer, but asking in a way that makes other people want to answer will improve your chances of a good solution and make the experience a positive one on all sides.
 
-I have solved this trouble in bash with:
-
-echo $(date -d"3 month ago" "+%G%m%d")
-
-I think that if bash has a built-in way for this purpose, then python, much more equipped, should provide something 
-better than forcing writing one's own script to achieve this goal. Of course i could do something like:
-
-if int(time.strftime('%m')) == 1:
-    return '12'
-else:
-    if int(time.strftime('%m')) < 10:
-        return '0'+str(time.strftime('%m')-1)
-    else:
-        return str(time.strftime('%m') -1)
-        
-I have not tested this code and i don't want to use it anyway (unless I can't find any other way:/)
-
-Thanks for your help!
-```
-
-While the heading of his question could be better, it does convey what he’s trying to figure out. Usually something as brief as “python date of previous month” is what other users would enter in as search terms on Google, making it easily found. Another good thing about the question is that it’s not just a question. The asker shows what he or she has done and that he or she has put in some effort to answer the question. And while it may not be as important as the question itself, the asker shows courtesy, which does increase the chance of getting an answer.
-
-```
-A: datetime and the datetime.timedelta classes are your friend.
-
-1. find today
-2. use that to find the first day of this month.
-3. use timedelta to backup a single day, to the last day of the previous month.
-4. print the YYYYMM string you're looking for.
-
-Like this:
-
- >>> import datetime
- >>> today = datetime.date.today()
- >>> first = datetime.date(day=1, month=today.month, year=today.year)
- >>> lastMonth = first - datetime.timedelta(days=1)
- >>> print lastMonth.strftime("%Y%m")
- 201202
- >>>
-
-```
- 
-The asker received six possible answers, and he or she was successful in inciting discussion from multiple users. The answers themselves were clear and were devoid of the rumored sarcasm and hostility of “hackers.” Since I myself have referenced this page and found it useful, I can confidently say that it is a good question.
-
-## The foolproof way to get ignored.
-
-While there are decent questions that benefit everyone, there are those one can ask to create an entirely different effect. In the following example, a user asks how he would, in short, create a desktop application with Facebook.
-
-```
-Q: Facebook Desktop Notifier
-
-I am a beginner programmer that have never used anything other than what's included in a language.
-
-I am trying to create a desktop application that notifies me anytime I get an update onfacebook. 
-How should go about doing this? Thanks in advance.
-
-edit Sorry I was not clear. Is there any way to make a DESKTOP application with facebook?
-```
-
-A simple “yes” would have answered the question, but we know that’s not the sort of answer he or she is looking for. Fortunately, someone kindly responded with a link to Facebook’s developer website. The asker should have done more research on his or her potential project. Then further down the road, he or she could have asked more specific and detailed questions that wouldn’t require a thousand-paged response for a sufficient answer.
-
-## Conclusion
-
-When we rely on others’ generosity and expertise to provide answers to our questions, it should hold that the question we ask should be one that leads to efficient and effective help that not only benefits us, but also the people we ask and others who might ask the same question in the future. Thus, if you have a question… make it a smart one! Asking questions may not always get you the best answer, but asking them in a way that will make others want to answer them will increase the success of finding a good solution and make it a positive experience on all sides.
+**A note on AI use**
+I wrote this essay myself. I used Claude to check my spelling and grammar, fix my HTML tags, and suggest where to add more detail about the two questions.
