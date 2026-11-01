@@ -12,7 +12,7 @@ labels:
   - TypeScript
 ---
 
-<img width="300px" class="rounded float-start pe-4" src="../img/coding-standards/eslint-vscode.png">
+<img width="300px" class="rounded float-start pe-4" src="../img/eslint-vscode.png">
 
 ## Subject lines in all caps
 
