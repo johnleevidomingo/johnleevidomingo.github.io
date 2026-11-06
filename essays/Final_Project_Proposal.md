@@ -35,8 +35,10 @@ Users may also manually enter courses they have already taken to filter out clas
 
 ## Proof of concept:
 
-<img width="300px" class="rounded float-start pe-4" src="../img/projectproposal.jpg">
-<p class="text-center"><small>Extracting data from University of Hawaii at Manoa Course Catalog</small></p>
+<div class="text-center mb-4">
+  <img width="300px" class="rounded float-start pe-4" src="../img/projectproposal.jpg">
+  <p class="text-center"><small>Extracting data from University of Hawaii at Manoa Course Catalog</small></p>
+</div>
 
 ## Use case ideas
 - New user creates an account
