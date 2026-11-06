@@ -37,7 +37,7 @@ Users may also manually enter courses they have already taken to filter out clas
 
 <div class="text-center mb-4">
   <img width="300px" class="rounded float-start pe-4" src="../img/projectproposal.jpg">
-  <p class="text-center"><small>Extracting data from University of Hawaii at Manoa Course Catalog</small></p>
+  <p><small>Extracting data from University of Hawaii at Manoa Course Catalog</small></p>
 </div>
 
 ## Use case ideas
